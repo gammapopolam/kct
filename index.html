@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Krasnoyarsk City Transit</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js"></script>
+<!-- Materialize -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<!-- Materialize icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+body { margin: 0; padding: 0; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div id="modal1" class="modal bottom-sheet" style="max-height: 90%; height: 90%; width: inherit; margin: inherit">
+            <div class="modal-content">
+                <h4 id="line"></h4>
+                <p id="address"></p>
+                <p id="layer-feature-name" class="grey-text"></p>
+                <div id="images" style="display: flex; flex-wrap: wrap;"></div>
+                <p id="caption" class="grey-text"></p>
+                <p id="description" class="flow-text"></p>
+                <div id="audios"></div>
+            </div>
+        </div>
+    </div>
+<div id="map"></div>
+
+<script src="main.js"></script>
+</body>
+
+</html>

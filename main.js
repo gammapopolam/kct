@@ -51,7 +51,7 @@ const filterGroup = document.getElementById('filter-group');
 const map = new mapboxgl.Map({
     container: 'map',
     // Choose from Mapbox's core styles, or make your own style with Mapbox Studio,
-    style: 'mapbox://styles/mapbox/streets-v12',
+    style: 'mapbox://styles/mapbox/light-v11',
     center: [92.87308, 56.01005],
     zoom: 10,
     interactive: true
